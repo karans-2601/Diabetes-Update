@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diabetes Update</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    /* ── Header banner ── */
+    .header {
+      width: 100%;
+      background: #fff;
+    }
+    .header img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ── Carousel wrapper ── */
+    .carousel-section {
+      max-width: 860px;
+      margin: 36px auto 48px;
+      padding: 0 16px;
+    }
+
+    .carousel {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.45s ease;
+    }
+
+    .slide {
+      min-width: 100%;
+    }
+
+    /* ── Article card ── */
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+
+    .card-inner {
+      padding: 32px 36px 28px;
+    }
+
+    .card h2 {
+      font-family: Georgia, serif;
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: #8B1A2F;
+      line-height: 1.45;
+      margin-bottom: 8px;
+    }
+
+    .card .date {
+      font-size: 0.78rem;
+      color: #888;
+      font-family: Arial, sans-serif;
+      margin-bottom: 18px;
+      letter-spacing: 0.02em;
+    }
+
+    .card .key-label {
+      font-family: Arial, sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-bottom: 22px;
+    }
+
+    .card ul li {
+      font-size: 0.91rem;
+      line-height: 1.6;
+      color: #333;
+      font-family: Arial, sans-serif;
+      margin-bottom: 6px;
+    }
+
+    .card .read-more {
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #8B1A2F;
+      text-decoration: none;
+      border: 1.5px solid #8B1A2F;
+      padding: 6px 18px;
+      border-radius: 3px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .card .read-more:hover {
+      background: #8B1A2F;
+      color: #fff;
+    }
+
+    /* ── Bottom gradient bar (matches banner) ── */
+    .card-bar {
+      height: 5px;
+      background: linear-gradient(to right, #8B1A2F, #c0543a, #d4813e, #e0a060);
+    }
+
+    /* ── Navigation ── */
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 12px;
+      margin-top: 16px;
+      font-family: Arial, sans-serif;
+      font-size: 0.88rem;
+    }
+
+    .nav button {
+      background: none;
+      border: none;
+      color: #8B1A2F;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 3px;
+      transition: background 0.15s;
+    }
+    .nav button:hover { background: #f0e0e3; }
+    .nav button:disabled { color: #bbb; cursor: default; background: none; }
+
+    .nav .dots {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #ccc;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .dot.active { background: #8B1A2F; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 18px 0 28px;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      color: #888;
+    }
+    footer a { color: #8B1A2F; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header Banner -->
+  <div class="header">
+    <img src="Diabetes_Update.png" alt="Diabetes Update" />
+  </div>
+
+  <!-- Carousel -->
+  <section class="carousel-section">
+    <div class="carousel">
+      <div class="slides" id="slides">
+
+        <!-- Slide 1 -->
+        <div class="slide">
+          <div class="card">
+            <div class="card-inner">
+              <h2>Insulin Pump Therapy Improves Cardiometabolic Health in Newly Diagnosed Type 2 Diabetes</h2>
+              <p class="date">March 4, 2026</p>
+              <p class="key-label">Key Takeaways</p>
+              <ul>
+                <li>Early intensive insulin pump therapy (CSII) in newly diagnosed Type 2 diabetes may significantly improve cardiometabolic health.</li>
+                <li>The therapy has been shown to reduce the cardiometabolic index, indicating better metabolic control.</li>
+                <li>It may also lower insulin resistance, improving the body's response to insulin.</li>
+                <li>Pancreatic β-cell function may improve, suggesting potential preservation of endogenous insulin secretion.</li>
+                <li>These findings highlight the metabolic advantages of early intensive glycemic management using continuous subcutaneous insulin infusion (CSII).</li>
+              </ul>
+              <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="card-bar"></div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="card">
+            <div class="card-inner">
+              <h2>Comparative Clinical Effects of Oral Semaglutide and SGLT2 Inhibitors in Type 2 Diabetes</h2>
+              <p class="date">March 4, 2026</p>
+              <p class="key-label">Key Takeaways</p>
+              <ul>
+                <li>Oral semaglutide and SGLT2 inhibitors demonstrate comparable efficacy in improving glycemic control in patients with type 2 diabetes.</li>
+                <li>Both therapies are also associated with similar reductions in body weight.</li>
+                <li>However, treatment with SGLT2 inhibitors has been linked to a reduction in skeletal muscle mass in some patients.</li>
+                <li>This finding highlights the importance of monitoring body composition during therapy.</li>
+                <li>Additional caution may be required in patients at risk of sarcopenia or frailty, where muscle loss could have clinical implications.</li>
+              </ul>
+              <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="card-bar"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+      <button id="prevBtn" onclick="changeSlide(-1)" disabled>« Previous</button>
+      <div class="dots">
+        <div class="dot active" onclick="goTo(0)"></div>
+        <div class="dot" onclick="goTo(1)"></div>
+      </div>
+      <button id="nextBtn" onclick="changeSlide(1)">Next »</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Powered by <a href="https://mediquest.in" target="_blank">Mediquest Healthcom</a>
+  </footer>
+
+  <script>
+    let current = 0;
+    const total = 2;
+
+    function updateCarousel() {
+      document.getElementById('slides').style.transform = `translateX(-${current * 100}%)`;
+      document.getElementById('prevBtn').disabled = current === 0;
+      document.getElementById('nextBtn').disabled = current === total - 1;
+      document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    function changeSlide(dir) {
+      current = Math.max(0, Math.min(total - 1, current + dir));
+      updateCarousel();
+    }
+
+    function goTo(n) {
+      current = n;
+      updateCarousel();
+    }
+  </script>
+
+</body>
+</html>
